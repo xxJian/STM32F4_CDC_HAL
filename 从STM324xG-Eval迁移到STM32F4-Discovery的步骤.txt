@@ -1,0 +1,6 @@
+从STM324xG-Eval迁移到STM32F4-Discovery的步骤：
+1. 修改项目的Driver/BSP/Components包含的源文件
+2. 修改项目的Driver/BSP/STM32F4-Discovery包含的源文件
+3. 添加开发板对应的库文件，如Middlewares/PDM目录包含库
+4. 修改源文件中的开发板头文件为#include "stm32f4_discovery.h"
+5. 修改文件"stm32f4xx_hal_conf.h"内容，打开开发板对应的功能模块
